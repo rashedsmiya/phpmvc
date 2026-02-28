@@ -1,0 +1,19 @@
+{
+    "name": "akash/phpmvc",
+    "description": "A simple lightweight php MVC framework",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rashedsmiya",
+            "email": "rashedmiyaofficial@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
