@@ -1,10 +1,12 @@
 <?php 
 
 use Pecee\SimpleRouter\SimpleRouter;
+use App\Controllers\WelcomeController;
+use App\Controllers\PortfoliosController;
 
-// Auto load the vendor files
-require_once __DIR__.'/../vendor/autoload.php';
+// Auto load the vendor files 
 
-SimpleRouter::get('/phpmvc', function() {
-    return 'Hello world';
-});
+SimpleRouter::get('/phpmvc', [WelcomeController::class, "hello"]);
+
+SimpleRouter::get('/phpmvc/portfolios', [PortfoliosController::class, "index"]); 
+

@@ -2,6 +2,12 @@
 
 use Pecee\SimpleRouter\SimpleRouter;
 
+require_once __DIR__ ."/vendor/autoload.php";
+
+define("ROOT", __DIR__ ."");
+define("VIEWS", ROOT ."/views/");
+// define("PUBLIC_PATH", ROOT ."/public/");
+
 /* Load external routes file */
 require_once 'routes/route.php';
 
