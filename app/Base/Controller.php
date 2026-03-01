@@ -4,5 +4,8 @@
 
     class Controller  
     {
-        // do Something
+         public function views(string $path): void 
+         {
+            require_once VIEWS . '/' . $path;
+         }  
     }

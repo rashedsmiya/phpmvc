@@ -8,7 +8,8 @@
     {
         public function hello()
         {
-            
-          require_once VIEWS ."/index.php";
+           
+         $this->views('index.php');
+         
         }
     }

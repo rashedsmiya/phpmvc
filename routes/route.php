@@ -6,7 +6,11 @@ use App\Controllers\PortfoliosController;
 
 // Auto load the vendor files 
 
-SimpleRouter::get('/phpmvc', [WelcomeController::class, "hello"]);
+SimpleRouter::get('phpmvc/', function(){
+
+    return views('index.php');
+
+});
 
 SimpleRouter::get('/phpmvc/portfolios', [PortfoliosController::class, "index"]); 
 
